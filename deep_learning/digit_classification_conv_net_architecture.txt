@@ -1,0 +1,45 @@
+┌─────────────────────────────────────────────────────────┐
+ │               INPUT LAYER (9 x 9 x 1)                   │
+ │   Handcoded Binary Digit Matrix (e.g., Digits 0 – 9)    │
+ └────────────────────────────┬────────────────────────────┘
+                              │
+                              ▼
+ ┌─────────────────────────────────────────────────────────┐
+ │              CONVOLUTIONAL LAYER (7 x 7)                │
+ │   - Filter: 3 x 3 Learnable Kernel                      │
+ │   - Operation: Sliding Cross-Correlation (Stride 1)     │
+ └────────────────────────────┬────────────────────────────┘
+                              │
+                              ▼
+ ┌─────────────────────────────────────────────────────────┐
+ │                RELU ACTIVATION LAYER                    │
+ │   - Operation: max(0, Feature Map)                      │
+ │   - Purpose: Filters out negative noise values          │
+ └────────────────────────────┬────────────────────────────┘
+                              │
+                              ▼
+ ┌─────────────────────────────────────────────────────────┐
+ │                  FLATTEN LAYER (49 x 1)                 │
+ │   - Operation: Non-learnable Reshape                    │
+ │   - Purpose: Bridges 2D spatial grid into a 1D vector   │
+ └────────────────────────────┬────────────────────────────┘
+                              │
+                              ▼
+ ┌─────────────────────────────────────────────────────────┐
+ │           DENSE / FULLY CONNECTED LAYER (10 x 1)        │
+ │   - Weights: 10 x 49 Weight Matrix + Bias Vector        │
+ │   - Output: 10 Raw Class Scores (Logits)                │
+ └────────────────────────────┬────────────────────────────┘
+                              │
+                              ▼
+ ┌─────────────────────────────────────────────────────────┐
+ │                 SOFTMAX ACTIVATION LAYER                │
+ │   - Operation: Exponentiation & Normalization           │
+ │   - Output: Interpretable Probabilities (Sum to 1.0)    │
+ └────────────────────────────┬────────────────────────────┘
+                              │
+                              ▼
+ ┌─────────────────────────────────────────────────────────┐
+ │               FINAL PREDICTION OUTPUT                   │
+ │   - Argmax Selection -> Predicted Digit (0 through 9)   │
+ └─────────────────────────────────────────────────────────┘
