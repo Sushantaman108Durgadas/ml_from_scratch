@@ -1,0 +1,46 @@
+
+=========================================
+         STARTING SOFM TRAINING          
+=========================================
+
+--- Epoch 1/200 | LR: 0.1 | Radius: 2 ---
+  Training Sample [0.1, 0.2] ---> mapped to BMU Neuron #2
+  Training Sample [0.9, 0.8] ---> mapped to BMU Neuron #3
+  Training Sample [0.2, 0.1] ---> mapped to BMU Neuron #2
+  Training Sample [0.8, 0.9] ---> mapped to BMU Neuron #3
+
+--- Epoch 50/200 | LR: 0.0755 | Radius: 1.68763 ---
+  Training Sample [0.1, 0.2] ---> mapped to BMU Neuron #1
+  Training Sample [0.9, 0.8] ---> mapped to BMU Neuron #3
+  Training Sample [0.2, 0.1] ---> mapped to BMU Neuron #0
+  Training Sample [0.8, 0.9] ---> mapped to BMU Neuron #3
+
+--- Epoch 100/200 | LR: 0.0505 | Radius: 1.41912 ---
+  Training Sample [0.1, 0.2] ---> mapped to BMU Neuron #1
+  Training Sample [0.9, 0.8] ---> mapped to BMU Neuron #3
+  Training Sample [0.2, 0.1] ---> mapped to BMU Neuron #0
+  Training Sample [0.8, 0.9] ---> mapped to BMU Neuron #3
+
+--- Epoch 150/200 | LR: 0.0255 | Radius: 1.19334 ---
+  Training Sample [0.1, 0.2] ---> mapped to BMU Neuron #1
+  Training Sample [0.9, 0.8] ---> mapped to BMU Neuron #3
+  Training Sample [0.2, 0.1] ---> mapped to BMU Neuron #0
+  Training Sample [0.8, 0.9] ---> mapped to BMU Neuron #3
+
+--- Epoch 200/200 | LR: 0.0005 | Radius: 1.00347 ---
+  Training Sample [0.1, 0.2] ---> mapped to BMU Neuron #1
+  Training Sample [0.9, 0.8] ---> mapped to BMU Neuron #3
+  Training Sample [0.2, 0.1] ---> mapped to BMU Neuron #0
+  Training Sample [0.8, 0.9] ---> mapped to BMU Neuron #3
+
+=========================================
+        TRAINING COMPLETED SUCCESSFULLY  
+=========================================
+
+Final Learned Weight Vectors for Output Neurons:
+Neuron 0 weights: [ 0.15979 0.14021 ]
+Neuron 1 weights: [ 0.141113 0.158887 ]
+Neuron 2 weights: [ 0.603234 0.636573 ]
+Neuron 3 weights: [ 0.8495 0.8505 ]
+
+[Prediction Test] Input [0.5, 0.8] mapped to Output Neuron (BMU): 2
