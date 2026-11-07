@@ -1,0 +1,29 @@
+Enter the number of input features: > 2
+Number of neurons in input layer: 2
+Enter the number of hidden layers: > 2
+Number of hidden layers: 2
+Enter neuron in 1 layer: > 3
+Enter neuron in 2 layer: > 4
+hidden_neuron =
+
+   3   4
+
+
+Network Architecture Initialized Successfully!
+Starting Training...
+Epoch 1000/10000 - Loss: 0.124398
+Epoch 2000/10000 - Loss: 0.032077
+Epoch 3000/10000 - Loss: 0.016498
+Epoch 4000/10000 - Loss: 0.010761
+Epoch 5000/10000 - Loss: 0.007877
+Epoch 6000/10000 - Loss: 0.006169
+Epoch 7000/10000 - Loss: 0.005047
+Epoch 8000/10000 - Loss: 0.004258
+Epoch 9000/10000 - Loss: 0.003676
+Epoch 10000/10000 - Loss: 0.003229
+
+Training Complete! Final XOR Predictions:
+   5.3597e-02
+   9.8707e-01
+   9.8994e-01
+   9.3755e-03
